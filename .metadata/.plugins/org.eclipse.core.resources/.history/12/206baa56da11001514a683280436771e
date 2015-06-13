@@ -1,0 +1,22 @@
+package server;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Socket clientSocket = null;
+		ServerSocket serverSocket = null;
+		
+		try{
+			serverSocket = new ServerSocket(4444);
+			System.out.println("Server startet....");
+			clientSocket = serverSocket.accept();
+		}catch(Exception e){
+			
+		}
+
+	}
+
+}
